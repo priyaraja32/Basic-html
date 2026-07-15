@@ -4,110 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <h1>Dream To Travel</h1>
-        <p>Explore Beautiful Destinations Around the world</p>
 
-        <a href="#home">Home</a>|
-        <a href="#places">Places</a>|
-        <a href="#gallery">Gallery</a>|
-        <a href="#register">Register</a>|
-        <a href="#contact">Contact</a>
-    </center>
+<div class="header">
+    <h1>Dream To Travel</h1>
+    <p>Explore Beautiful Destinations Around the World</p>
 
-    <hr>
+    <a href="#home">Home</a> |
+    <a href="#places">Places</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#register">Register</a> |
+    <a href="#contact">Contact</a>
+</div>
 
-<h2 id="home">Welcome to Joy Travels</h2>
-<p>
-Dream to Travel offers the best holiday packages at affordable prices.
-Book your dream vacation with us today.
-</p>
+<div class="home" id="home">
+    <h2>Welcome to Joy Travels</h2>
+    <p>
+        Dream to Travel offers the best holiday packages at affordable prices.
+        Book your dream vacation with us today.
+    </p>
+</div>
 
-<hr>
+<div class="places" id="places">
+    <h2>Popular Destinations</h2>
 
-<h2 id="places">Popular Destinations</h2>
-<ul>
-    <li>Goa</li>
-    <li>Ooty</li>
-    <li>Kodaikanal</li>
-    <li>Kerala</li>
-    <li>Manali</li>
-</ul>
+    <ul>
+        <li>Goa</li>
+        <li>Ooty</li>
+        <li>Kodaikanal</li>
+        <li>Kerala</li>
+        <li>Manali</li>
+    </ul>
+</div>
 
-<hr>
+<div class="gallery" id="gallery">
+    <h2>Travel Gallery</h2>
 
-<h2 id="gallery">Travell Gallery</h2>
+    <img src="images/goa.jpg" alt="Goa">
+    <img src="images/ooty.jpg" alt="Ooty">
+    <img src="images/kerala.jpg" alt="Kerala">
+</div>
 
-<img src="images/goa.jpg" alt="Goa" width="300">
-<img src="images/ooty.jpg" alt="Ooty" width="300">
-<img src="images/kerala.jpg" alt="Kerala" width="300">
+<div class="package">
+    <h2>Package Details</h2>
 
-<hr>
+    <table>
+        <tr>
+            <th>Place</th>
+            <th>Days</th>
+            <th>Price</th>
+        </tr>
 
-<h2>Package Details</h2>
+        <tr>
+            <td>Goa</td>
+            <td>3</td>
+            <td>₹10,000</td>
+        </tr>
 
-<table border="1">
-    <tr>
-        <th>Place</th>
-        <th>Days</th>
-        <th>Price</th>
+        <tr>
+            <td>Ooty</td>
+            <td>4</td>
+            <td>₹12,000</td>
+        </tr>
 
-    </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>7</td>
+            <td>₹20,000</td>
+        </tr>
+    </table>
+</div>
 
-    <tr>
-        <td>Goa</td>
-        <td>3</td>
-        <td>10,000</td>
-    </tr>
+<div class="register" id="register">
 
-      <tr>
-        <td>Ooty</td>
-        <td>4</td>
-        <td>12,000</td>
-    </tr>
-
-      <tr>
-        <td>Kerala</td>
-        <td>7</td>
-        <td>20,000</td>
-    </tr>
-
-</table>
-
-<hr>
-
-<h2 id="register">Book Your Trip</h2>
+<h2>Book Your Trip</h2>
 
 <form>
-    Name:<br>
-    <input type="text"><br><br>
 
-    Email:<br>
-    <input type="Mobile number"><br><br>
+Name:<br>
+<input type="text"><br><br>
 
-    Select Destination:<br>
+Email:<br>
+<input type="email"><br><br>
 
-    <select>
-        <option>Goa</option>
-        <option>Ooty</option>
-        <option>Kerala</option>
-        <option>Manali</option>
+Phone:<br>
+<input type="tel"><br><br>
 
-    </select>
-
-    <br><br>
-
-    Travel Type:<br>
-
-<input type="radio" name="trip"> Family
-<input type="radio" name="trip"> Friends
-<input type="radio" name="trip"> Own Travel
+<select>
+    <option>Goa</option>
+    <option>Ooty</option>
+    <option>Kerala</option>
+    <option>Manali</option>
+</select>
 
 <br><br>
 
-Facilities Required:<br>
+<input type="radio" name="trip"> Family
+<input type="radio" name="trip"> Friends
+<input type="radio" name="trip"> Solo
+
+<br><br>
 
 <input type="checkbox"> Hotel
 <input type="checkbox"> Food
@@ -115,13 +113,7 @@ Facilities Required:<br>
 
 <br><br>
 
-Travel Date:<br>
-
-<input type="date">
-
-<br><br>
-
-Special Request:<br>
+<input type="date"><br><br>
 
 <textarea rows="4" cols="40"></textarea>
 
@@ -130,38 +122,33 @@ Special Request:<br>
 <input type="submit" value="Book Now">
 <input type="reset" value="Clear">
 
-<hr>
+</form>
 
-<h2 id="contact">Contact Us</h2>
+</div>
 
-<p>Email:
-<a href="mailto:travel@gmail.com">travel@gmail.com</a>
-</p>
+<div class="footer" id="contact">
 
-<p>Phone:
-<a href="tel:+919876543210">+91 9876543210</a>
+<h2>Contact Us</h2>
+
+<p>Email :
+<a href="mailto:travel@gmail.com">travel@gmail.com</a></p>
+
+<p>Phone :
+<a href="tel:+919876543210">+91 9876543210</a></p>
+
+<p>
+<a href="https://www.google.com" target="_blank">Visit Google</a>
 </p>
 
 <p>
-Visit:
-<a href="https://www.google.com" target="_blank">Google</a>
+<a href="https://facebook.com">Facebook</a> |
+<a href="https://instagram.com">Instagram</a> |
+<a href="https://youtube.com">YouTube</a>
 </p>
 
-<hr>
+<p>© 2026 Dream To Travel</p>
 
-<center>
+</div>
 
-<p>Follow Us</p>
-
-<a href="https://facebook.com" target="_blank">Facebook</a> |
-
-<a href="https://instagram.com" target="_blank">Instagram</a> |
-
-<a href="https://youtube.com" target="_blank">YouTube</a>
-
-<p>© 2026 Dream to Travel</p>
-
-</center>
-</form>
 </body>
-</html>
+</html> 
